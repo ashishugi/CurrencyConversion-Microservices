@@ -1,0 +1,16 @@
+currency-exchange-service:
+
+https://localhost:8000/currency-exchange/from/USD/to/INR
+
+currency-conversion-service :
+https://localhost/curreny-conversion/from/USD/to/INR/quantity/10
+
+Eureka:
+http://localhost:8761/
+
+API-gateway:
+for any microservice : localhost:8765/registeredNameOfMicroservice(CAPITAL_LETTER)
+base url for currency-exchange: http://localhost:8765/CURRENCY_EXCHANGE
+api endpoint: http://localhost:8765/CURRENCY_EXCHANGE/currency-exchange/from/USD/to/INR
+
+http://localhost:8765/currency-conversion/curreny-conversion-feign/from/USD/to/INR/quantity/10
